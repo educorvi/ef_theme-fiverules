@@ -1,0 +1,59 @@
+//Hier das Theme einfuegen
+
+
+//Schrift
+@font-face {
+  font-family: 'DGUV';
+  src: url("~@/assets/DGUVMeta-Normal.woff") format("woff");
+  src: url("~@/assets/DGUVMeta-Normal.otf") format("opentype");
+}
+#root {
+  font-family: "DGUVMetaWeb", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 100%;
+  color: #3c3c3c;
+}
+
+
+//Navbar
+.navbar-toggler {
+  border: 0 !important;
+}
+.navbar-toggler-icon {
+  background-image: url("~@/theme/justify.svg") !important;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+#top{
+  background-color: white !important;
+  box-shadow: none;
+  border-bottom-style: solid;
+  border-bottom-width: 1.5px;
+  border-bottom-color: rgba(0, 0, 0, 0.5);
+  @extend .navbar-light;
+}
+
+
+//Formtheming
+
+//  General Inputs
+input {
+  padding: 12px !important;
+  height: 48px !important;
+}
+
+.vjf_wrap {
+  padding: 10px;
+}
+
+//  Datetime
+.vjf_datetime [type=date] {
+  max-width: 48%;
+  width: 48%;
+  margin-right: 2%;
+}
+.vjf_datetime .input-group-append {
+  max-width: 48%;
+  width: 48%;
+  margin-left: 2%;
+}
