@@ -1,13 +1,14 @@
 //Schrift
 @font-face {
   font-family: 'DGUV';
-  src: url("~@/assets/DGUVMeta-Normal.woff") format("woff");
-  src: url("~@/assets/DGUVMeta-Normal.otf") format("opentype");
+  src: url("~@/theme/DGUVMeta-Normal.woff") format("woff");
+  src: url("~@/theme/DGUVMeta-Normal.otf") format("opentype");
 }
 #root {
-  font-family: "DGUVMetaWeb", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  font-family: "DGUV", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
   font-size: 100%;
+  -webkit-font-smoothing: antialiased;
   color: #3c3c3c;
 }
 
@@ -40,8 +41,16 @@ input {
 }
 
 .vjf_wrap{
-  padding-left: 10px;
-  padding-right: 10px;
+  @extend .pl-2;
+  @extend .pr-2;
+}
+
+.vjf_group {
+  @extend .mb-5
+}
+
+.vjf_control {
+  @extend .mb-5
 }
 
 .vjf_control label {
@@ -55,9 +64,13 @@ input {
 }
 
 .custom-control {
-  height: $custom-control-indicator-size+0.4rem;
+  min-height: $custom-control-indicator-size+0.4rem;
   margin-top: 0.3rem;
   //margin-bottom: 0.4rem;
+}
+
+.vjf_wrap:last-of-type .vjf_control{
+  @extend .mb-2;
 }
 
 //  Datetime
@@ -70,4 +83,18 @@ input {
   max-width: 48%;
   width: 48%;
   margin-left: 2%;
+}
+
+//Kopffragen
+.greyBackground {
+  @extend .p-3;
+  @extend .pt-4;
+  @extend .ml-n3;
+  @extend .mr-n3;
+  @extend .mb-4;
+
+  label {
+    color: $black;
+    font-weight: 300;
+  }
 }
