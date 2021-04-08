@@ -41,8 +41,8 @@ input {
 }
 
 .vjf_wrap{
-  @extend .pl-2;
-  @extend .pr-2;
+  @extend .pl-1;
+  @extend .pr-1;
 }
 
 .vjf_group {
@@ -89,8 +89,9 @@ input {
 .greyBackground {
   @extend .p-3;
   @extend .pt-4;
-  @extend .ml-n3;
-  @extend .mr-n3;
+  @extend .pb-4;
+  @extend .ml-n2;
+  @extend .mr-n2;
   @extend .mb-4;
 
   label {
