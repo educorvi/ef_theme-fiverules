@@ -4,6 +4,7 @@
   src: url("~@/theme/DGUVMeta-Normal.woff") format("woff");
   src: url("~@/theme/DGUVMeta-Normal.otf") format("opentype");
 }
+
 #root {
   font-family: "DGUV", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -17,12 +18,14 @@
 .navbar-toggler {
   border: 0 !important;
 }
+
 .navbar-toggler-icon {
   background-image: url("~@/theme/justify.svg") !important;
   width: 1.5rem;
   height: 1.5rem;
 }
-#top{
+
+#top {
   background-color: white !important;
   box-shadow: none;
   border-bottom-style: solid;
@@ -40,7 +43,7 @@ input {
   height: 48px !important;
 }
 
-.vjf_wrap{
+.vjf_wrap {
   @extend .pl-1;
   @extend .pr-1;
 }
@@ -69,29 +72,36 @@ input {
   min-height: $custom-control-indicator-size+0.4rem;
   margin-top: 0.3rem;
 }
-  //Farbe
+
+//Farbe
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
-  background-color: $primary-light!important;
+  background-color: $primary-light !important;
 }
+
 .custom-checkbox .custom-control-input:checked:focus ~ .custom-control-label::before {
   box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem $primary
 }
+
 .custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
   box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 0, 0, 0.25)
 }
+
 .custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
   background-color: #7c9bb8;
 }
 
 .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
-  background-color: $primary-light!important;
+  background-color: $primary-light !important;
 }
+
 .custom-radio .custom-control-input:checked:focus ~ .custom-control-label::before {
   box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem $primary
 }
+
 .custom-radio .custom-control-input:focus ~ .custom-control-label::before {
   box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 0, 0, 0.25)
 }
+
 .custom-radio .custom-control-input:active ~ .custom-control-label::before {
   background-color: #7c9bb8;
 }
@@ -103,6 +113,7 @@ input {
   width: 48%;
   margin-right: 2%;
 }
+
 .vjf_datetime .input-group-append {
   max-width: 48%;
   width: 48%;
@@ -134,7 +145,20 @@ input {
     margin: 7px 0 !important;
   }
 }
-  //Letzter in Gruppe soll einen geringeren Bottom Margin haben
-.vjf_wrap:last-of-type .vjf_control{
+
+//Letzter in Gruppe soll einen geringeren Bottom Margin haben
+.vjf_wrap:last-of-type .vjf_control {
   @extend .mb-2;
 }
+
+//Sidebar active full width
+.cust {
+  @extend .ml-n2;
+  @extend .mr-n2;
+}
+.collapse .cust {
+  @extend .pl-4;
+  @extend .pr-4;
+}
+
+
