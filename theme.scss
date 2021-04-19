@@ -151,14 +151,28 @@ input {
   @extend .mb-2;
 }
 
-//Sidebar active full width
+//Sidebar
+//Divider off
+.sidebarHead {
+  @extend .pt-3;
+  border-bottom-style: none !important;
+  background-color: #f8f9fa !important;
+}
+
+// item styling
 .cust {
   @extend .ml-n2;
-  @extend .mr-n2;
+  @extend .mr-n1;
+  color: $primary;
 }
 .collapse .cust {
   @extend .pl-4;
   @extend .pr-4;
 }
+.sidebarSymbolParent {
+  @extend .pl-3;
+}
+
+
 
 
