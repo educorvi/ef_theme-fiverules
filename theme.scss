@@ -205,3 +205,8 @@ input {
     font-size: 42px;
   }
 }
+
+
+::-webkit-scrollbar-thumb {
+  background: $primary-light !important;
+}
