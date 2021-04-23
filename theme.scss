@@ -213,3 +213,8 @@ input {
 ::-webkit-scrollbar-thumb {
   background: $primary-light !important;
 }
+
+
+#formHead hr {
+  visibility: hidden;
+}
