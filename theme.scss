@@ -9,6 +9,7 @@
   font-family: "DGUV", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 100%;
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   color: #3c3c3c;
 }
@@ -53,7 +54,7 @@ input {
 }
 
 .vjf_control {
-  @extend .mb-5
+  @extend .mt-5
 }
 
 .vjf_control label {
@@ -136,19 +137,29 @@ input {
 }
 
 //Groups
-.vjf_group .card-header {
-  border-bottom: none;
+.vjf_group {
+  border: 1px solid #ededed;
 
-  * {
-    font-size: 1rem;
-    font-weight: normal;
-    margin: 7px 0 !important;
+  legend {
+    @extend .p-3;
+    background-color: whitesmoke;
+    font-size: 16px;
+    line-height: 1.45em;
+  }
+
+  > div{
+    @extend .p-3;
   }
 }
 
 //Letzter in Gruppe soll einen geringeren Bottom Margin haben
-.vjf_wrap:last-of-type .vjf_control {
-  @extend .mb-2;
+//.vjf_group > div > div:first-of-type .vjf_control{
+//  background-color: red;
+//  @extend .mt-0;
+//}
+
+.vjf_horizontal > div:first-of-type > div > .vjf_control{
+  @extend .mt-2;
 }
 
 //Sidebar
@@ -165,10 +176,12 @@ input {
   @extend .mr-n1;
   color: $primary;
 }
+
 .collapse .cust {
   @extend .pl-4;
   @extend .pr-4;
 }
+
 .sidebarSymbolParent {
   @extend .pl-3;
 }
