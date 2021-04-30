@@ -1,0 +1,13 @@
+button.btn {
+  font-size: 14px;
+  padding: 0.9em 0.75em;
+  .btn-group {
+    &.btn-primary, &.btn-primary-light {
+      border: 1px solid white;
+    }
+  }
+}
+
+.btn-primary-light {
+  background-color: $primary-light;
+}
