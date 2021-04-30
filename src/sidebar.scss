@@ -16,6 +16,9 @@
 .collapse .cust {
   @extend .pl-4;
   @extend .pr-4;
+  h6 {
+    font-weight: normal;
+  }
 }
 .sidebarSymbolParent {
   @extend .pl-3;
