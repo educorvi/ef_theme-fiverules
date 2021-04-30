@@ -1,0 +1,17 @@
+.vjf_group {
+
+  > legend {
+    @extend .p-3;
+    background-color: whitesmoke;
+    font-size: 16px;
+    line-height: 1.45em;
+    border: 1px solid #ededed;
+    border-bottom-width: 0;
+  }
+
+  > div {
+    @extend .p-3;
+    border: 1px solid #ededed;
+    border-top-width: 0;
+  }
+}

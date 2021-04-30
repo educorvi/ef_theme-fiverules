@@ -1,0 +1,38 @@
+input {
+  padding: 12px !important;
+  height: 48px !important;
+}
+
+.vjf_wrap {
+  @extend .pl-1;
+  @extend .pr-1;
+}
+
+.vjf_group {
+  @extend .mb-5
+}
+
+.vjf_control {
+  @extend .mt-5
+}
+
+.vjf_control label {
+  color: $primary-light;
+  font-weight: bold;
+}
+
+.vjf_control * {
+  color: $black;
+  font-weight: normal;
+}
+
+//Erster in einem horizontal layout soll einen geringeren Top Margin haben
+.vjf_horizontal > div:first-of-type > div > .vjf_control{
+  @extend .mt-2;
+}
+
+
+// Divider zwischen Ueberschrift und Formular deaktiviert
+#formHead hr {
+  visibility: hidden;
+}
