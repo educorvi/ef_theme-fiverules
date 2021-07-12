@@ -17,3 +17,9 @@
   border-bottom-color: rgba(0, 0, 0, 0.2);
   @extend .navbar-light;
 }
+
+#menueicon {
+  p {
+    display: block !important;
+  }
+}
