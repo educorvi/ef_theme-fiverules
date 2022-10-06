@@ -1,4 +1,4 @@
-input {
+input:not([type=range]) {
   padding: 12px !important;
   height: 48px !important;
 }
