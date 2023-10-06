@@ -9,17 +9,16 @@
 
   // item styling
 .cust {
-  @extend .ml-n2;
-  @extend .mr-n1;
+  @extend .ms-n2;
+  @extend .me-n1;
   color: $primary;
 }
 .collapse .cust {
-  @extend .pl-4;
-  @extend .pr-4;
+  @extend .px-4;
   h6 {
     font-weight: normal;
   }
 }
 .sidebarSymbolParent {
-  @extend .pl-3;
+  @extend .ps-3;
 }
