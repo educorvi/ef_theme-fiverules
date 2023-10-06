@@ -1,5 +1,10 @@
-input:not([type=range]) {
+div:not(.form-floating) > input:not([type=range]) {
+
   padding: 12px !important;
+
+}
+
+input:not([type=range]) {
   height: 48px !important;
 }
 
@@ -26,7 +31,7 @@ input:not([type=range]) {
 }
 
 //Erster in einem horizontal layout soll einen geringeren Top Margin haben
-.vjf_horizontal > div:first-of-type > div > .vjf_control{
+.vjf_horizontal > div:first-of-type > div > .vjf_control {
   @extend .mt-2;
 }
 
