@@ -1,0 +1,20 @@
+body {
+  font-family: "DGUV", serif;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  color: #3c3c3c;
+
+  @include media-breakpoint-up(lg){
+    background-color: #e1e1e1;
+  }
+}
+.main {
+  background-color: white;
+  max-width: $maxContentWidth;
+}
+//Scrollbar Farbe
+::-webkit-scrollbar-thumb {
+  background: $primary-light !important;
+}

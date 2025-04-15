@@ -1,11 +1,20 @@
-input:not([type=range]) {
+div:not(.form-floating) > input:not([type=range]) {
+
   padding: 12px !important;
+
+}
+
+input:not([type=range]):not(.form-check-input) {
   height: 48px !important;
 }
 
+.form-check-input {
+  margin-top: 0 !important;
+  margin-right: 5px;
+}
+
 .vjf_wrap {
-  @extend .pl-1;
-  @extend .pr-1;
+  @extend .px-1;
 }
 
 .vjf_group {
@@ -27,7 +36,7 @@ input:not([type=range]) {
 }
 
 //Erster in einem horizontal layout soll einen geringeren Top Margin haben
-.vjf_horizontal > div:first-of-type > div > .vjf_control{
+.vjf_horizontal > div:first-of-type > div > .vjf_control {
   @extend .mt-2;
 }
 
