@@ -4,7 +4,7 @@ div:not(.form-floating) > input:not([type=range]) {
 
 }
 
-input:not([type=range]):not(.form-check-input) {
+input:not([type=range]):not(.form-check-input):not([type=checkbox]):not([type=radio]) {
   height: 48px !important;
 }
 
